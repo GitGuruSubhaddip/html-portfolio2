@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment System</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        
+          body{
+            background-color:antiquewhite
+          }
+          h1{
+            background-color:darkseagreen ;
+            color:whitesmoke
+          }
+          h2{
+            color: #FAF8F1;
+            background-color:#C58940
+          }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Doctor Appointment System</h1>
+    </header>
+    <main>
+        <div id="doctorList">
+            <h2>Available Doctors</h2>
+            <ul id="doctors">
+                <!-- Doctor list items will be populated using JavaScript -->
+            </ul>
+        </div>
+        <div id="appointmentForm">
+            <h2>Book Appointment</h2>
+            <form id="appointmentForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" required>
+                    <!-- Doctor options will be populated using JavaScript -->
+                </select>
+
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" required>
+
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" required>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
